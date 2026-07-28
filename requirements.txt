@@ -6,3 +6,16 @@ chromadb
 pypdf
 sentence-transformers
 python-dotenv
+
+
+#####
+# ollama serve
+# ollama pull llama3.2
+# uvicorn app:app --reload
+# uvicorn app:app --reload
+# http://127.0.0.1:8000/docs
+# POST /chat
+-------------------------------------------------
+{
+  "question": "What was the company's revenue?"
+}
