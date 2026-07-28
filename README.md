@@ -27,3 +27,34 @@ source venv/bin/activate
 
 ## install 
 pip install langchain-community
+
+## from app folder run 
+uvicorn app:app --reload
+
+Uvicorn running on http://127.0.0.1:8000
+http://127.0.0.1:8000/docs
+POST /chat
+
+## question 
+
+
+{
+  "question": "What was the company's revenue?"
+}
+
+### TREE STRUCTURE 
+
+
+annual_report.pdf
+        ↓
+PDF Loader
+        ↓
+Embeddings
+        ↓
+ChromaDB
+        ↓
+RAG Search
+        ↓
+Llama 3.2 (Local AI)
+        ↓
+FastAPI Response
